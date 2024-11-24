@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Sembunyikan scrollbar di seluruh halaman */
+body, html {
+    overflow: hidden;  /* Menyembunyikan scrollbar pada body dan html */
+  }
+  
+  /* Opsional: Jika Anda ingin scrollable tetapi tidak ingin scrollbar terlihat, gunakan berikut */
+  ::-webkit-scrollbar {
+    display: none; /* Menyembunyikan scrollbar pada Webkit-based browser seperti Chrome dan Safari */
+  }
+  
+  
