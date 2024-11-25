@@ -3,13 +3,11 @@
 @tailwind utilities;
 
 /* Sembunyikan scrollbar di seluruh halaman */
-body, html {
-    overflow: hidden;  /* Menyembunyikan scrollbar pada body dan html */
-  }
-  
-  /* Opsional: Jika Anda ingin scrollable tetapi tidak ingin scrollbar terlihat, gunakan berikut */
-  ::-webkit-scrollbar {
-    display: none; /* Menyembunyikan scrollbar pada Webkit-based browser seperti Chrome dan Safari */
-  }
-  
+
+@font-face {
+    font-family: 'BoxedRound';
+    src: url('./assets/font/BoxedRound.ttf') format('truetype');
+    font-weight: normal; /* Sesuaikan jika ada variasi */
+    font-style: normal;  /* Sesuaikan jika ada variasi */
+}
   

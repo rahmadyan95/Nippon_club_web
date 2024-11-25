@@ -6,16 +6,17 @@ const Navbar = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow-lg z-10">
-      <div className="bg-pink-200 h-2"></div>
-      <div className="container mx-auto px-8 lg:px-10">
+    <nav className="sticky top-0 bg-white shadow-lg z-20">
+      <div className="bg-[#fb5659] h-2"></div>
+      <div className="container mx-auto px-9 lg:px-15">
         <div className="flex items-center justify-between py-2">
           {/* Logo */}
           <a href="#" className="flex items-center">
             <img
               src={logo}
               alt="Logo"
-              className="h-[9vw] lg:h-[5vw] lg:w-auto w-auto"
+              className="h-[9vw] lg:h-[3.7vw] lg:w-auto w-auto"
+              loading="lazy"
             />
           </a>
 
@@ -23,7 +24,7 @@ const Navbar = () => {
           <div className="hidden md:flex items-center gap-4">
             <a
               href="#"
-              className="py-2 px-4 rounded text-gray-800 hover:bg-gray-100"
+              className="py-2 px-4 rounded text-gray-800 hover:bg-gray-100 font-sans"
             >
               Home
             </a>

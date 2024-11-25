@@ -1,12 +1,13 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-    
-  ],
+// tailwind.config.js
+module.exports = {
+  content: ["./src/**/*.{html,js,jsx,ts,tsx}"], // Sesuaikan path file Anda
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        boxed: ['BoxedRound', 'sans-serif'], // Tambahkan nama font lokal
+      },
+    },
   },
   plugins: [],
-}
+};
