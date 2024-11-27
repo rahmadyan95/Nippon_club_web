@@ -5,6 +5,11 @@ import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { Link } from "react-scroll";
+import { Button } from "@/components/ui/button"
+// import akapan from "../../assets/akapan.png"
+import Curtain from "../../components/OurDivision/CurtainAccordion"
+import PhoneCurtain from "../../components/OurDivision/PhoneCurtainAccordion"
+
 
 
 
@@ -17,13 +22,14 @@ import img6 from "../../assets/NCBB_Hero_Photo/6.jpg";
 import img4 from "../../assets/NCBB_Hero_Photo/4.jpg";
 import img7 from "../../assets/NCBB_Hero_Photo/7.jpg";
 import img8 from "../../assets/NCBB_Hero_Photo/8.jpg";
-// Tambahkan gambar lainnya sesuai kebutuhan
+// // Tambahkan gambar lainnya sesuai kebutuhan
 
 const Home = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   // Array gambar untuk slideshow yang sudah di-impor
-  const slides = [img7, img8, img3, img4, img5, img6, img1, img2]; // Sesuaikan jumlah dan urutan gambar
+  const slides = [img7, img8, img3, img4, img5, img6, img1, img2]; 
+  // const slides = [img4];// Sesuaikan jumlah dan urutan gambar
 
   // Mengubah slide setiap 15 detik
   useEffect(() => {
@@ -121,11 +127,12 @@ const Home = () => {
       {/* Section Who We Are */}
       <section id="who-we-are" className="who-we-are bg-white py-16">
         <div className="container mx-auto px-5 lg:px-0 text-center">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-800 mb-8">
-            Who Are <span className="text-[#fb5659]">We?</span>
-          </h2>
+        <h2 className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group" data-aos='fade-d'>
+          Who Are <span className="text-[#fb5659]">We?</span>
+          <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
+        </h2>
 
-          <p className="text-sm sm:text-base lg:text-xl text-gray-600 leading-relaxed sm:leading-normal lg:leading-relaxed max-w-full sm:max-w-4xl lg:max-w-5xl mx-4 sm:mx-auto font-sans text-justify"
+          <p className="text-sm sm:text-base lg:text-2xl text-gray-600 leading-relaxed sm:leading-normal lg:leading-relaxed max-w-full sm:max-w-4xl lg:max-w-5xl mx-4 sm:mx-auto font-sans text-justify"
               data-aos="fade-down">
               Nippon Club is one of the activity units at BINUS University that is engaged in 
               Japanese education and culture. Nippon Club, which has been established since 
@@ -133,9 +140,58 @@ const Home = () => {
               things related to Japan, especially in terms of education, Japanese arts and culture 
               specifically to Nippon Club members and in general to Bina Nusantara students who are 
               interested in Japanese culture, as well as other Japanese enthusiasts.
-              </p>
+            </p>
         </div>
+
+        <div className="absolute left-0 right-0 flex justify-center mt-10">
+          <Button 
+          className="flex items-center justify-center lg:w-[400px] lg:h-[60px] bg-transparent hover:bg-[#fb5659] font-boxed lg:text-2xl
+          text-black border-[#fb5659] border-2 hover:text-white text-xl hover:duration-300" data-aos="fade-down" >Learn More About Us</Button>
+        </div>
+
       </section>
+
+      {/* Section 2 Mode PC*/}
+      <section 
+        id="our-divisions" 
+        className="py-32 hidden md:block"
+      >
+        <div className="mx-auto px-4 lg:px-0 text-center">
+        <h2 className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group" data-aos='fade-d'>
+          Our <span className="text-[#fb5659]">Divisions</span>
+          <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
+        </h2>
+          {/* <Curtain /> */}
+        </div>
+
+        <Curtain />
+      </section>
+
+      {/* Section 2 Mode Ponsel */}
+
+      <section 
+      id="our-divisions" 
+      className="py-16 block md:hidden"
+    >
+      <div className="mx-auto px-4 text-center">
+        <h2 className="text-3xl lg:text-4xl font-boxed text-gray-800 mb-6">
+          Our <span className="text-[#fb5659]">Divisions</span>
+        </h2>
+        {/* <Curtain /> */}
+      </div>
+
+        <PhoneCurtain />
+      </section>
+
+
+
+
+      
+
+
+      {/* Se */}
+
+      
     </div>
   );
 };
