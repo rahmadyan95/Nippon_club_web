@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/button"
 import Curtain from "../../components/OurDivision/CurtainAccordion"
 import PhoneCurtain from "../../components/OurDivision/PhoneCurtainAccordion"
 import MascotDIV from "../../components/Mascot/OurMascot"
+import ArtDIV from "../../components/Gallery/Gallery"
 
 
 
@@ -138,12 +139,7 @@ const Home = () => {
 
           <p className="text-sm sm:text-base lg:text-2xl text-gray-600 leading-relaxed sm:leading-normal lg:leading-relaxed max-w-full sm:max-w-4xl lg:max-w-5xl mx-4 sm:mx-auto font-sans text-justify"
               data-aos="fade-down">
-              Nippon Club is one of the activity units at BINUS University that is engaged in 
-              Japanese education and culture. Nippon Club, which has been established since 
-              June 16, 1999, always tries to provide information, introduce, and present various 
-              things related to Japan, especially in terms of education, Japanese arts and culture 
-              specifically to Nippon Club members and in general to Bina Nusantara students who are 
-              interested in Japanese culture, as well as other Japanese enthusiasts.
+              Nippon Club adalah salah satu unit kegiatan di Universitas BINUS yang bergerak di bidang pendidikan dan kebudayaan Jepang. Nippon Club, yang telah berdiri sejak 16 Juni 1999, selalu berusaha untuk memberikan informasi, mengenalkan, dan mempersembahkan berbagai hal yang berkaitan dengan Jepang, terutama dalam hal pendidikan, seni, dan kebudayaan Jepang, khususnya kepada anggota Nippon Club dan secara umum kepada mahasiswa Bina Nusantara yang tertarik dengan budaya Jepang, serta para penggemar Jepang lainnya.
             </p>
         </div>
 
@@ -165,6 +161,9 @@ const Home = () => {
           Our <span className="text-[#fb5659]">Divisions</span>
           <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
         </h2>
+        <p className="text-2xl text-gray-600 max-w-6xl mx-auto mb-12 " data-aos="fade-down">
+        Kami terorganisir dalam divisi-divisi khusus, masing-masing berdedikasi untuk memberikan keunggulan di bidangnya masing-masing. Divisi-divisi kami bekerja secara kolaboratif untuk mencapai tujuan organisasi sambil memastikan kualitas dan inovasi tertinggi dalam pekerjaan mereka.
+        </p>
           {/* <Curtain /> */}
         </div>
 
@@ -182,7 +181,12 @@ const Home = () => {
         <h2 className="text-3xl lg:text-4xl font-boxed text-gray-800 mb-6">
           Our <span className="text-[#fb5659]">Divisions</span>
         </h2>
-        {/* <Curtain /> */}
+
+        <p className="text-0.5xl text-gray-600 max-w-xl mx-auto mb-12 " data-aos="fade-down">
+        Kami terorganisir dalam divisi-divisi khusus, masing-masing berdedikasi untuk memberikan keunggulan di bidangnya masing-masing. Divisi-divisi kami bekerja secara kolaboratif untuk mencapai tujuan organisasi sambil memastikan kualitas dan inovasi tertinggi dalam pekerjaan mereka.
+        </p>
+
+
       </div>
 
         <PhoneCurtain />
@@ -192,7 +196,7 @@ const Home = () => {
 
       {/* Mascots Section */}
 
-      <section id="our-divisions" className="mt-1 lg:mt-32">
+      <section id="our-divisions" className="mt-1 lg:mt-20">
         <div className="container mx-auto px-5 lg:px-0 text-center">
           <h2
             className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group"
@@ -201,6 +205,9 @@ const Home = () => {
             Our <span className="text-[#fb5659]">Mascot</span>
             <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
           </h2>
+          <p className=" text-1xl lg:text-2xl text-gray-600 max-w-6xl mx-auto mb-12 " data-aos="fade-down">
+        Kami memiliki maskot yang mewakili setiap divisi, masing-masing mencerminkan semangat dan nilai-nilai divisi tersebut. Maskot-maskot ini bekerja bersama untuk mendukung tujuan organisasi dan memastikan kualitas serta inovasi.
+        </p>
         </div>
 
         {/* <div className="flex w-full bg-red-500 h-[650px] shadow-2xl mb-32">
@@ -208,11 +215,70 @@ const Home = () => {
         </div> */}
 
         <MascotDIV/>
+      </section>
 
-        
+      <section id="our-divisions" className="mt-0 lg:mt-32">
+        <div className="container mx-auto px-5 lg:px-0 text-center">
+          <h2
+            className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group"
+            data-aos="fade-d"
+          >
+            Nippon Club<span className="text-[#fb5659]"> Gallery</span>
+            <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
+          </h2>
+          <p className="lg:text-2xl text-gray-600 max-w-6xl mx-auto mb-12 " data-aos="fade-down">
+          Nippon Club Gallery adalah wujud apresiasi untuk karya terbaik anggota Nippon Club. Galeri ini menampilkan kreativitas dan dedikasi dalam mengeksplorasi budaya Jepang, sekaligus menginspirasi dan menghargai semangat komunitas kami.
+        </p>
+        </div>
 
+        <div className="w-[85%] mx-auto shadow-xl lg:mb-20 mb-8">
+          <ArtDIV />
+        </div>
+
+        <a
+          href="#"
+          className="flex font-boxed items-center justify-center text-lg text-[#fb5659] text-[20px] lg:text-[40px] hover:underline"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+          See More at Nippon Gallery
+        </a>
         
       </section>
+
+      <section id="our-divisions" className="mt-0 lg:mt-28">
+        <div className="container mx-auto px-5 lg:px-0 text-center">
+          <h2
+            className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group"
+            data-aos="fade-d"
+          >
+            Otaku<span className="text-[#fb5659]">-Hi</span>
+            <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
+          </h2>
+          <p className="lg:text-2xl text-gray-600 max-w-6xl mx-auto mb-12 " data-aos="fade-down">
+          Nippon Club Gallery adalah wujud apresiasi untuk karya terbaik anggota Nippon Club. Galeri ini menampilkan kreativitas dan dedikasi dalam mengeksplorasi budaya Jepang, sekaligus menginspirasi dan menghargai semangat komunitas kami.
+        </p>
+        </div>
+
+      </section>
+
+
+      
+
+
+
 
 
 
