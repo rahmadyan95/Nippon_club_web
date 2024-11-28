@@ -7,7 +7,7 @@ const img1 = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo
 const img2 = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/MEDIA.jpg';
 const img3 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/7.jpg";
 const img5 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/8.jpg";
-const img_jurnal = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/Dummy.jpg';
+const img_jurnal = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/JURNAL.jpg';
 const img_PR = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/Dummy.jpg';
 
 const CurtainAccordion: React.FC = () => {
