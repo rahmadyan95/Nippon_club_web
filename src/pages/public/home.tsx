@@ -14,14 +14,15 @@ import PhoneCurtain from "../../components/OurDivision/PhoneCurtainAccordion"
 
 
 // Mengimpor gambar menggunakan import dari folder assets
-import img1 from "../../assets/NCBB_Hero_Photo/1.jpg"
-import img2 from "../../assets/NCBB_Hero_Photo/2.jpg";
-import img3 from "../../assets/NCBB_Hero_Photo/3.jpg";
-import img5 from "../../assets/NCBB_Hero_Photo/5.jpg";
-import img6 from "../../assets/NCBB_Hero_Photo/6.jpg";
-import img4 from "../../assets/NCBB_Hero_Photo/4.jpg";
-import img7 from "../../assets/NCBB_Hero_Photo/7.jpg";
-import img8 from "../../assets/NCBB_Hero_Photo/8.jpg";
+const img1 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/1.jpg";
+const img2 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/2.jpg";
+const img3 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/3.jpg";
+const img4 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/4.jpg";
+const img5 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/5.jpg";
+const img6 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/6.jpg";
+const img7 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/7.jpg";
+const img8 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/8.jpg";
+
 // // Tambahkan gambar lainnya sesuai kebutuhan
 
 const Home = () => {

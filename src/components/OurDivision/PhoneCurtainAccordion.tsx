@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 
 // Import images
-import img1 from "../../assets/NCBB_division_photo/EDU.jpg";
-import img2 from "../../assets/NCBB_division_photo/MEDIA.jpg";
-import img3 from "../../assets/NCBB_Hero_Photo/7.jpg";
-import img5 from "../../assets/NCBB_Hero_Photo/8.jpg";
-import img_jurnal from "../../assets/NCBB_division_photo/Dummy.jpg"
-import img_PR from "../../assets/NCBB_division_photo/Dummy2.jpg"
+const img1 = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/EDU.jpg';
+const img2 = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/MEDIA.jpg';
+const img3 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/7.jpg";
+const img5 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/8.jpg";
+const img_jurnal = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/Dummy.jpg';
+const img_PR = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/Dummy.jpg';
 
 const CurtainAccordion: React.FC = () => {
   const [activeIndex, setActiveIndex] = useState(0);
