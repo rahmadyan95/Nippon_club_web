@@ -11,6 +11,9 @@ import Curtain from "../../components/OurDivision/CurtainAccordion"
 import PhoneCurtain from "../../components/OurDivision/PhoneCurtainAccordion"
 import MascotDIV from "../../components/Mascot/OurMascot"
 import ArtDIV from "../../components/Gallery/Gallery"
+import Newsfront from "../../components/otakuHi/ShowCaseNews"
+import UpComingEvents from "../../components/OurEvents/UpcomingEventsHandler"
+import UpComingEventsMobile from "../../components/OurEvents/UpcomingEventsHandlerMobile"
 
 
 
@@ -253,12 +256,12 @@ const Home = () => {
               d="M9 5l7 7-7 7"
             />
           </svg>
-          See More at Nippon Gallery
+          See More at Nippon Club Gallery
         </a>
         
       </section>
 
-      <section id="our-divisions" className="mt-0 lg:mt-28">
+      <section id="our-divisions" className="mt-12 lg:mt-28">
         <div className="container mx-auto px-5 lg:px-0 text-center">
           <h2
             className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group"
@@ -267,12 +270,71 @@ const Home = () => {
             Otaku<span className="text-[#fb5659]">-Hi</span>
             <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
           </h2>
-          <p className="lg:text-2xl text-gray-600 max-w-6xl mx-auto mb-12 " data-aos="fade-down">
-          Nippon Club Gallery adalah wujud apresiasi untuk karya terbaik anggota Nippon Club. Galeri ini menampilkan kreativitas dan dedikasi dalam mengeksplorasi budaya Jepang, sekaligus menginspirasi dan menghargai semangat komunitas kami.
+          <p className="lg:text-2xl text-gray-600 max-w-6xl mx-auto mb-12  " data-aos="fade-down">
+          
+              Otaku-Hi adalah portal berita jejepangan yang menyajikan informasi terkini tentang anime, manga, budaya Jepang, dan komunitas otaku. Nama Otaku-Hi menggabungkan kata Otaku (penggemar budaya pop Jepang) dan Hi (hari), mencerminkan misinya sebagai sumber berita harian untuk para otaku.
         </p>
         </div>
 
+        <div className="w-[85%] mx-auto lg:mb-20 mb-8" data-aos='fade-down'>
+          <Newsfront/>
+        </div>
+
+        <a
+          href="#"
+          className="flex font-boxed items-center justify-center text-lg text-[#fb5659] text-[20px] lg:text-[40px] hover:underline"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            className="h-5 w-5 ml-2"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            strokeWidth="2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              d="M9 5l7 7-7 7"
+            />
+          </svg>
+          See More at Otaku Hi
+        </a>
       </section>
+
+      {/* sec */}
+
+      <section id="our-divisions" className="mt-12 lg:mt-28">
+        <div className="container mx-auto px-5 lg:px-0 text-center">
+          <h2
+            className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group"
+            data-aos="fade-d"
+          >
+            Our<span className="text-[#fb5659]"> Events</span>
+            <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
+          </h2>
+          
+        </div>
+
+
+        <div className="">
+          <div className="w-[80%] mx-auto lg:mb-20 mb-8 hidden md:block" data-aos='fade-down'>
+            <UpComingEvents/>
+          </div>
+
+          <div className="w-[80%] mx-auto lg:mb-20 mb-8 block md:hidden" data-aos='fade-down'>
+            <UpComingEventsMobile/>
+          </div>
+
+        </div>
+        
+
+
+
+      </section>
+
+
+      
 
 
       
