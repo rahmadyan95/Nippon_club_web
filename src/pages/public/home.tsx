@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button"
 // import akapan from "../../assets/akapan.png"
 import Curtain from "../../components/OurDivision/CurtainAccordion"
 import PhoneCurtain from "../../components/OurDivision/PhoneCurtainAccordion"
+import MascotDIV from "../../components/Mascot/OurMascot"
 
 
 
@@ -22,6 +23,8 @@ const img5 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/5.j
 const img6 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/6.jpg";
 const img7 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/7.jpg";
 const img8 = "https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_Hero_Photo/8.jpg";
+
+// import akapan from "../../assets/akapan.png"
 
 // // Tambahkan gambar lainnya sesuai kebutuhan
 
@@ -155,7 +158,7 @@ const Home = () => {
       {/* Section 2 Mode PC*/}
       <section 
         id="our-divisions" 
-        className="py-32 hidden md:block"
+        className="mt-36 hidden md:block"
       >
         <div className="mx-auto px-4 lg:px-0 text-center">
         <h2 className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group" data-aos='fade-down'>
@@ -184,6 +187,33 @@ const Home = () => {
 
         <PhoneCurtain />
       </section>
+
+
+
+      {/* Mascots Section */}
+
+      <section id="our-divisions" className="mt-1 lg:mt-32">
+        <div className="container mx-auto px-5 lg:px-0 text-center">
+          <h2
+            className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group"
+            data-aos="fade-d"
+          >
+            Our <span className="text-[#fb5659]">Mascot</span>
+            <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
+          </h2>
+        </div>
+
+        {/* <div className="flex w-full bg-red-500 h-[650px] shadow-2xl mb-32">
+          
+        </div> */}
+
+        <MascotDIV/>
+
+        
+
+        
+      </section>
+
 
 
 
