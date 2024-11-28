@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import "aos/dist/aos.css";
 
 // Import images
 const img1 = 'https://ncassets001.s3.us-east-1.amazonaws.com/NCBB_division_photo/EDU.jpg';
@@ -110,6 +111,7 @@ const CurtainAccordion: React.FC = () => {
         scrollSnapType: "x mandatory",
         WebkitOverflowScrolling: "touch",
       }}
+      data-aos='fade-down'
     >
       {sections.map((section, index) => (
         <motion.div

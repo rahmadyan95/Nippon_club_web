@@ -140,7 +140,7 @@ const CurtainAccordion: React.FC = () => {
       
 
       {/* Divisions */}
-      <div className="h-[700px] w-full flex">
+      <div className="h-[700px] w-full flex" data-aos = "fade-right">
         {sections.map((section, index) => (
           <motion.div
             key={index}

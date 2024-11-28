@@ -158,7 +158,7 @@ const Home = () => {
         className="py-32 hidden md:block"
       >
         <div className="mx-auto px-4 lg:px-0 text-center">
-        <h2 className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group" data-aos='fade-d'>
+        <h2 className="text-4xl lg:text-6xl font-boxed text-gray-800 mb-8 relative inline-block group" data-aos='fade-down'>
           Our <span className="text-[#fb5659]">Divisions</span>
           <span className="absolute left-0 bottom-[-2px] h-[2px] w-0 bg-[#fb5659] transition-all duration-500 group-hover:w-full"></span>
         </h2>
@@ -173,6 +173,7 @@ const Home = () => {
       <section 
       id="our-divisions" 
       className="py-16 block md:hidden"
+      data-aos='fade-down'
     >
       <div className="mx-auto px-4 text-center">
         <h2 className="text-3xl lg:text-4xl font-boxed text-gray-800 mb-6">
