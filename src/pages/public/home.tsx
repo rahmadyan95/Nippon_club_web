@@ -14,6 +14,7 @@ import ArtDIV from "../../components/Gallery/Gallery"
 import Newsfront from "../../components/otakuHi/ShowCaseNews"
 import UpComingEvents from "../../components/OurEvents/UpcomingEventsHandler"
 import UpComingEventsMobile from "../../components/OurEvents/UpcomingEventsHandlerMobile"
+import Footer from "../../components/footer/footer"
 
 
 
@@ -298,7 +299,7 @@ const Home = () => {
               d="M9 5l7 7-7 7"
             />
           </svg>
-          See More at Otaku Hi
+          See More at Otaku-Hi
         </a>
       </section>
 
@@ -318,7 +319,7 @@ const Home = () => {
 
 
         <div className="">
-          <div className="w-[80%] mx-auto lg:mb-20 mb-8 hidden md:block" data-aos='fade-down'>
+          <div className="w-[70%] mx-auto lg:mb-20 mb-8 hidden md:block" data-aos='fade-down'>
             <UpComingEvents/>
           </div>
 
@@ -351,7 +352,7 @@ const Home = () => {
 
       {/* Se */}
 
-      
+      <Footer/>
     </div>
   );
 };

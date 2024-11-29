@@ -13,16 +13,16 @@ interface Event {
 const events: Event[] = [
   {
     id: 1,
-    date: "01 OCT",
+    date: "2024-12-14",
     time: "12:00 PM",
-    title: "Orange Pip Market",
+    title: "Anime Art Ilustration",
     description:
-      "Orange Pip Market - artisan food market on Baker & Bedford Street in Middlesbrough - running on the last Saturday of every month 12-7.",
-    image: "https://www.menuguildsystem.com/wp-content/uploads/2024/11/tuyu.jpg",
+      "Join us for an engaging online seminar focused on the art of anime illustration! Whether you're a beginner or a seasoned artist, this event will provide valuable insights into the techniques and styles that define anime art.",
+    image: "https://marketplace.canva.com/EAF48rR761g/1/0/1600w/canva-white-and-black-anime-desktop-wallpaper-AUoZtlA5cIQ.jpg",
   },
   {
     id: 2,
-    date: "02 OCT",
+    date: "2024-10-02",
     time: "7:00 PM",
     title: "Secret Club Cinema - Twisted Lips",
     description:
@@ -31,7 +31,7 @@ const events: Event[] = [
   },
   {
     id: 3,
-    date: "03 OCT",
+    date: "2024-10-02",
     time: "9:00 AM",
     title: "Bridge Bungee Jump",
     description:
